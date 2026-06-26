@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <script src="index.js" defer></script>
+    <style>
+      body {
+        background: linear-gradient(
+          135deg,
+          #111 0%,
+          #128ee0 100%
+        ); /* Gold/Yellow dark gradient */
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 100vh;
+        margin: 0;
+        padding-top: 100px;
+        box-sizing: border-box;
+      }
+      .container {
+        background-color: white;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        width: 90%;
+        max-width: 450px;
+        text-align: center;
+      }
+
+      h2 {
+        color: #222;
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-size: 24px;
+      }
+      .input-area {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+
+      #todo {
+        flex: 1;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        outline: none;
+      }
+      .add-btn {
+        padding: 10px 15px;
+        font-size: 16px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      #lst {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+      }
+      #lst li {
+        background: #f8f9fa;
+        padding: 10px 15px;
+        margin-top: 10px;
+        border-radius: 6px;
+        border: 1px solid #e9ecef;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 16px;
+        word-break: break-all;
+      }
+
+      .btn-group {
+        display: flex;
+        gap: 10px;
+      }
+
+      #lst button {
+        padding: 6px 12px;
+        font-size: 14px;
+        cursor: pointer;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: #fff;
+        transition: background 0.2s;
+      }
+
+      #lst button:hover {
+        background-color: #f0f0f0;
+      }
+    </style>
+  </head>
+  <body>
+    <
+    <div class="container">
+      <h2>TO DO LIST</h2>
+
+      <div class="input-area">
+        <input type="text" id="todo" placeholder="Enter a task..." />
+        <button class="add-btn" onclick="addtask()">Add</button>
+      </div>
+
+      <ul id="lst"></ul>
+    </div>
+  </body>
+</html>
